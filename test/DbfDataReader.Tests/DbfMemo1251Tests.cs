@@ -2,6 +2,7 @@
 using System.Text;
 using Shouldly;
 using Xunit;
+using encodingProvider = DbfDataReader.EncodingProvider;
 
 namespace DbfDataReader.Tests
 {
@@ -14,7 +15,7 @@ namespace DbfDataReader.Tests
         {
             var options = new DbfDataReaderOptions
             {
-                Encoding = Encoding.GetEncoding("WINDOWS-1251")
+                Encoding = encodingProvider.GetEncoding(1251)
             };
             DbfDataReader = new DbfDataReader(FixturePath, options);
         }

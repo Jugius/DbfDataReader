@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -15,9 +15,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.13.9" />
-    <PackageReference Include="BenchmarkDotNet.Diagnostics.Windows" Version="0.13.9" />
-    <PackageReference Include="DbfDataReader" Version="0.9.0" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.14.0" />
+    <PackageReference Include="BenchmarkDotNet.Diagnostics.Windows" Version="0.14.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +27,10 @@
     <None Include="..\fixtures\dbase_03.dbf" Link="fixtures\dbase_03.dbf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\DbfDataReader\DbfDataReader.csproj" />
   </ItemGroup>
 
 </Project>
