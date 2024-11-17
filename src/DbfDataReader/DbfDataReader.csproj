@@ -4,7 +4,7 @@
     <Description>DbfDataReader is a small fast .Net Core library for reading dBase, xBase, Clipper and FoxPro database files</Description>
     <Copyright>Copyright Chris Richards</Copyright>
     <Authors>Chris Richards</Authors>
-    <TargetFrameworks>net7.0;net8.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
     <AssemblyName>DbfDataReader</AssemblyName>
     <PackageId>DbfDataReader</PackageId>
     <PackageTags>dbf;dBase;xBase;Clipper;FoxPro</PackageTags>
@@ -27,8 +27,8 @@
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
     <PackageReference Include="System.Data.Common" Version="4.3.0" />
-    <PackageReference Include="System.Memory" Version="4.5.5" />
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
+    <PackageReference Include="System.Memory" Version="4.6.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="9.0.0" />
   </ItemGroup>
   
   <ItemGroup>
